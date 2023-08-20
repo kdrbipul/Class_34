@@ -12,8 +12,8 @@ const student = {
         major:"Science",
     },
     takeExam: function(){
-        console.log(this);
-        console.log(this.name, "Taking Exam");
+        // console.log(this);
+        console.log(this.subject[0], "Taking Exam");
     },
     giveTreat:function(expense, tips){
         this.money=this.money - expense - tips;
@@ -24,8 +24,10 @@ const student = {
 // student.takeExam();
 
 
-const reamining=student.giveTreat(700, 50);
-console.log(reamining);
+// const reamining=student.giveTreat(700, 50);
+// console.log(reamining);
 
-const remaining2=student.giveTreat(500, 100);
-console.log(remaining2);
+// const remaining2=student.giveTreat(500, 100);
+// console.log(remaining2);
+
+student.takeExam();
